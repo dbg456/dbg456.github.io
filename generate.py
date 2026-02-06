@@ -48,7 +48,7 @@ def generate_super_bowl_page():
     """
 
     # 4. Build HTML
-    repo_url = "https://github.com/dave/dave.github.io" # UPDATE THIS TO YOUR ACTUAL REPO
+    repo_url = "https://github.com/dbg456.github.io" 
     
     html = f"""
     <div class="wrapper">

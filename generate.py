@@ -79,12 +79,47 @@ def generate_super_bowl_page():
         html += "</tr>"
     html += "</table>"
 
+    # Add this Search Bar into your HTML string
+    html += """
+    <div style="margin: 20px 0;">
+        <label for="squareSearch">Find your squares:</label>
+        <input type="text" id="squareSearch" onkeyup="highlightSquare()" placeholder="Enter your initials (e.g. DG)..." style="width:100%; padding:10px;">
+    </div>
+
+    <script>
+    function highlightSquare() {
+        let input = document.getElementById('squareSearch').value.toUpperCase();
+        let cells = document.getElementsByClassName('grid-cell');
+        
+        for (let cell of cells) {
+            if (input && cell.innerText.toUpperCase() === input) {
+                cell.style.backgroundColor = "yellow";
+                cell.style.color = "black";
+            } else {
+                cell.style.backgroundColor = "white";
+                cell.style.color = "#333";
+            }
+        }
+    }
+    </script>
+    """
     # Legend
     html += "<h3>Player Legend</h3><table class='legend-table'><tr><th>ID</th><th>Player</th></tr>"
     unique_mapping = sorted(list(set(pool)), key=lambda x: x[1])
     for name, symbol in unique_mapping:
         html += f"<tr><td><strong>{symbol}</strong></td><td>{name}</td></tr>"
     html += "</table>"
+
+    # Winners Section
+    html += """
+        <section id="winners" style="margin-top: 30px; padding: 15px; background-color: #f9f9f9; border: 1px dashed #ccc;">
+            <h3>🏆 Game Winners</h3>
+            <p><strong>Q1:</strong> TBD</p>
+            <p><strong>Half:</strong> TBD</p>
+            <p><strong>Q3:</strong> TBD</p>
+            <p><strong>Final:</strong> TBD</p>
+        </section>
+    """
 
     # Footer
     html += f"""

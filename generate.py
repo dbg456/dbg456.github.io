@@ -52,9 +52,9 @@ def generate_super_bowl_page():
     
     html = f"""
     <div class="wrapper">
-        <h1>🏈 Super Bowl Squares LIX</h1>
+        <h1>🏈 Superb Owl Squares 2026 </h1>
         <p><strong>Payouts:</strong> Q1: $40 | Half: $120 | Q3: $40 | Final: $240</p>
-        <p><em>Verification Seed: {RANDOM_SEED}</em> | <strong>Lucky 100th:</strong> {extra_square_winner}</p>
+        <p class="lucky">Note: {extra_square_winner} won the random 'Lucky 100th' square!</p>
         
         <table>
             <tr>

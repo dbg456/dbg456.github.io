@@ -1,12 +1,35 @@
-<html><head><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/water.css'></head><body><h1>Super Bowl LIX Squares</h1>
+<html><head>
     <style>
-        .sb-table { border-collapse: collapse; width: 100%; table-layout: fixed; }
-        .sb-table th, .sb-table td { border: 1px solid #444; padding: 10px; text-align: center; font-size: 0.8em; }
-        .axis { background-color: #333; color: white; font-weight: bold; width: 40px; }
-        .corner { background: transparent; border: none !important; }
+        :root { --patriots-red: #C60C30; --seahawks-navy: #002244; }
+        .wrapper { max-width: 800px; margin: auto; font-family: sans-serif; }
+        table { border-collapse: collapse; table-layout: fixed; width: 100%; margin-bottom: 20px; }
+        th, td { border: 1px solid #333; text-align: center; padding: 5px; overflow: hidden; }
+        
+        /* Team Headers */
+        .seahawks-header { background-color: var(--seahawks-navy); color: white; font-weight: bold; }
+        .patriots-header { background-color: var(--patriots-red); color: white; font-weight: bold; width: 30px; }
+        
+        /* Axis Numbers */
+        .axis-row { background-color: #eee; font-weight: bold; width: 35px; }
+        .axis-col { background-color: #eee; font-weight: bold; height: 35px; }
+        
+        /* Grid Cells */
+        .grid-cell { font-size: 0.85rem; height: 40px; }
+        .legend-table { width: auto; min-width: 300px; margin-top: 20px; }
+        .legend-table td { text-align: left; padding: 8px; }
+        .lucky { color: #d4af37; font-weight: bold; font-size: 0.8em; }
     </style>
-    <div style="overflow-x: auto;">
-    <table class="sb-table">
-        <thead>
+    </head><body>
+    <div class="wrapper">
+        <h1>Super Bowl Squares</h1>
+        <p>Payouts: Q1: $40 | Half: $120 | Q3: $40 | Final: $240</p>
+        <p class="lucky">Note: Mike R won the random 'Lucky 100th' square!</p>
+        
+        <table>
             <tr>
-                <th class="corner"></th><th class='axis'>1</th><th class='axis'>8</th><th class='axis'>4</th><th class='axis'>2</th><th class='axis'>3</th><th class='axis'>6</th><th class='axis'>9</th><th class='axis'>0</th><th class='axis'>5</th><th class='axis'>7</th></tr></thead><tbody><tr><td class='axis'>1</td><td>Available</td><td>Available</td><td>Available</td><td>Aunt Linda</td><td>Dave</td><td>Available</td><td>Aunt Linda</td><td>Uncle Steve</td><td>Uncle Steve</td><td>Dave</td></tr><tr><td class='axis'>2</td><td>Dave</td><td>Available</td><td>Available</td><td>Available</td><td>Dave</td><td>Uncle Steve</td><td>Aunt Linda</td><td>Available</td><td>Available</td><td>Available</td></tr><tr><td class='axis'>7</td><td>Aunt Linda</td><td>Mom</td><td>Dave</td><td>Mom</td><td>Available</td><td>Available</td><td>Available</td><td>Dave</td><td>Available</td><td>Aunt Linda</td></tr><tr><td class='axis'>6</td><td>Available</td><td>Mom</td><td>Available</td><td>Aunt Linda</td><td>Mom</td><td>Available</td><td>Available</td><td>Aunt Linda</td><td>Available</td><td>Dave</td></tr><tr><td class='axis'>9</td><td>Mom</td><td>Available</td><td>Available</td><td>Uncle Steve</td><td>Aunt Linda</td><td>Dave</td><td>Mom</td><td>Aunt Linda</td><td>Available</td><td>Available</td></tr><tr><td class='axis'>5</td><td>Available</td><td>Mom</td><td>Available</td><td>Mom</td><td>Available</td><td>Aunt Linda</td><td>Aunt Linda</td><td>Available</td><td>Uncle Steve</td><td>Mom</td></tr><tr><td class='axis'>0</td><td>Available</td><td>Available</td><td>Aunt Linda</td><td>Dave</td><td>Aunt Linda</td><td>Available</td><td>Available</td><td>Available</td><td>Available</td><td>Dave</td></tr><tr><td class='axis'>3</td><td>Available</td><td>Available</td><td>Available</td><td>Mom</td><td>Aunt Linda</td><td>Dave</td><td>Available</td><td>Aunt Linda</td><td>Available</td><td>Available</td></tr><tr><td class='axis'>8</td><td>Dave</td><td>Available</td><td>Available</td><td>Aunt Linda</td><td>Available</td><td>Aunt Linda</td><td>Available</td><td>Available</td><td>Aunt Linda</td><td>Dave</td></tr><tr><td class='axis'>4</td><td>Aunt Linda</td><td>Dave</td><td>Available</td><td>Available</td><td>Available</td><td>Aunt Linda</td><td>Available</td><td>Available</td><td>Available</td><td>Dave</td></tr></tbody></table></div></body></html>
+                <th colspan="2" style="border:none"></th>
+                <th colspan="10" class="seahawks-header">SEAHAWKS (Columns)</th>
+            </tr>
+            <tr>
+                <th colspan="2" style="border:none"></th>
+    <th class='axis-col'>4</th><th class='axis-col'>0</th><th class='axis-col'>7</th><th class='axis-col'>8</th><th class='axis-col'>3</th><th class='axis-col'>2</th><th class='axis-col'>9</th><th class='axis-col'>6</th><th class='axis-col'>5</th><th class='axis-col'>1</th></tr><tr><th rowspan="10" class="patriots-header">P<br>A<br>T<br>R<br>I<br>O<br>T<br>S</th><td class='axis-row'>6</td><td class='grid-cell'>JD</td><td class='grid-cell'>TH</td><td class='grid-cell'>DG</td><td class='grid-cell'>CL</td><td class='grid-cell'>M</td><td class='grid-cell'>AS</td><td class='grid-cell'>LK</td><td class='grid-cell'>CL</td><td class='grid-cell'>TH</td><td class='grid-cell'>MR</td></tr><tr><td class='axis-row'>7</td><td class='grid-cell'>SP</td><td class='grid-cell'>M</td><td class='grid-cell'>SP</td><td class='grid-cell'>TH</td><td class='grid-cell'>SW</td><td class='grid-cell'>LK</td><td class='grid-cell'>SP</td><td class='grid-cell'>AS</td><td class='grid-cell'>KB</td><td class='grid-cell'>M</td></tr><tr><td class='axis-row'>0</td><td class='grid-cell'>DG</td><td class='grid-cell'>AS</td><td class='grid-cell'>SW</td><td class='grid-cell'>M</td><td class='grid-cell'>CL</td><td class='grid-cell'>M</td><td class='grid-cell'>JD</td><td class='grid-cell'>LK</td><td class='grid-cell'>LK</td><td class='grid-cell'>SW</td></tr><tr><td class='axis-row'>4</td><td class='grid-cell'>JD</td><td class='grid-cell'>TH</td><td class='grid-cell'>MR</td><td class='grid-cell'>KB</td><td class='grid-cell'>KB</td><td class='grid-cell'>LK</td><td class='grid-cell'>DG</td><td class='grid-cell'>LK</td><td class='grid-cell'>CL</td><td class='grid-cell'>SW</td></tr><tr><td class='axis-row'>1</td><td class='grid-cell'>SP</td><td class='grid-cell'>KB</td><td class='grid-cell'>MR</td><td class='grid-cell'>DG</td><td class='grid-cell'>JD</td><td class='grid-cell'>M</td><td class='grid-cell'>SP</td><td class='grid-cell'>CL</td><td class='grid-cell'>AS</td><td class='grid-cell'>SW</td></tr><tr><td class='axis-row'>8</td><td class='grid-cell'>LK</td><td class='grid-cell'>CL</td><td class='grid-cell'>DG</td><td class='grid-cell'>M</td><td class='grid-cell'>TH</td><td class='grid-cell'>JD</td><td class='grid-cell'>DG</td><td class='grid-cell'>AS</td><td class='grid-cell'>M</td><td class='grid-cell'>SW</td></tr><tr><td class='axis-row'>3</td><td class='grid-cell'>MR</td><td class='grid-cell'>CL</td><td class='grid-cell'>SP</td><td class='grid-cell'>TH</td><td class='grid-cell'>AS</td><td class='grid-cell'>LK</td><td class='grid-cell'>TH</td><td class='grid-cell'>SW</td><td class='grid-cell'>SP</td><td class='grid-cell'>JD</td></tr><tr><td class='axis-row'>9</td><td class='grid-cell'>CL</td><td class='grid-cell'>KB</td><td class='grid-cell'>KB</td><td class='grid-cell'>AS</td><td class='grid-cell'>TH</td><td class='grid-cell'>MR</td><td class='grid-cell'>MR</td><td class='grid-cell'>JD</td><td class='grid-cell'>SP</td><td class='grid-cell'>DG</td></tr><tr><td class='axis-row'>5</td><td class='grid-cell'>SP</td><td class='grid-cell'>M</td><td class='grid-cell'>TH</td><td class='grid-cell'>SW</td><td class='grid-cell'>DG</td><td class='grid-cell'>KB</td><td class='grid-cell'>LK</td><td class='grid-cell'>MR</td><td class='grid-cell'>SW</td><td class='grid-cell'>KB</td></tr><tr><td class='axis-row'>2</td><td class='grid-cell'>KB</td><td class='grid-cell'>DG</td><td class='grid-cell'>JD</td><td class='grid-cell'>MR</td><td class='grid-cell'>MR</td><td class='grid-cell'>MR</td><td class='grid-cell'>AS</td><td class='grid-cell'>CL</td><td class='grid-cell'>JD</td><td class='grid-cell'>AS</td></tr></table><h3>Player Legend</h3><table class='legend-table'><tr><th>Symbol</th><th>Player</th></tr><tr><td><strong>AS</strong></td><td>Anna S</td></tr><tr><td><strong>CL</strong></td><td>Chris L</td></tr><tr><td><strong>DG</strong></td><td>Dave G</td></tr><tr><td><strong>JD</strong></td><td>John D</td></tr><tr><td><strong>KB</strong></td><td>Kelly B</td></tr><tr><td><strong>LK</strong></td><td>Linda K</td></tr><tr><td><strong>MR</strong></td><td>Mike R</td></tr><tr><td><strong>M</strong></td><td>Mom</td></tr><tr><td><strong>SP</strong></td><td>Sarah P</td></tr><tr><td><strong>SW</strong></td><td>Steve W</td></tr><tr><td><strong>TH</strong></td><td>Tom H</td></tr></table></div></body></html>

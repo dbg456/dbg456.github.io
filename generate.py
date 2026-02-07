@@ -2,14 +2,15 @@ import random
 
 def generate_super_bowl_page():
     # --- AUDITABLE SEED ---
-    # Changing this number will change the entire board. 
+    # Changing this number will change the entire board.
+    # But means that any time it is run the same values are picked 
     # Use any integer here.
     RANDOM_SEED = 42 
     random.seed(RANDOM_SEED)
     
     # 1. Setup Players
-    players = ["Dave G", "Mom", "Steve W", "Linda K", "John D", 
-               "Sarah P", "Mike R", "Kelly B", "Tom H", "Anna S", "Chris L"]
+    players = ["Bob G", "Dave G", "Dave H", "Dan K", "Dave N", 
+               "Jeff G", "Kirk B", "Latesha G", "Patrick G", "Sharon F", "Sejal P"]
     
     # 2. Assign Squares
     pool = []
